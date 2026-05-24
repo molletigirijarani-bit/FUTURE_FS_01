@@ -42,22 +42,5 @@ girijarani-portfolio/
 3. Go to **Settings → Pages → Source → main branch / root**
 4. Your site will be live at `https://molletigirijarani-bit.github.io`
 
-## ✏️ Customization
-
-### Update projects
-Edit the `projects` array in `script.js` — add your real GitHub repo links and live demo URLs.
-
-### Add contact backend
-Replace the form submit block in `script.js` with [EmailJS](https://www.emailjs.com/) for free email sending without a backend:
-```js
-emailjs.send('service_id', 'template_id', { name, email, message });
-```
-
-### Add your profile photo
-Place your photo at `assets/img/profile.jpg` and add this to the Hero section in `index.html`:
-```html
-<img src="assets/img/profile.jpg" alt="Girijarani Molleti" class="hero-photo" />
-```
-
 ## 📄 License
 MIT — free to use and modify.
