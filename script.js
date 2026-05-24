@@ -154,28 +154,34 @@ projects.forEach(p => {
 });
 
 /* ── Contact form ── */
-const form    = document.getElementById('contact-form');
-const success = document.getElementById('form-success');
-const error   = document.getElementById('form-error');
+emailjs.init("U0NoB1uZGk5m4tw6V");
 
-form.addEventListener('submit', e => {
+const form = document.querySelector("form");
+
+form.addEventListener("submit", function (e) {
   e.preventDefault();
-  success.style.display = 'none';
-  error.style.display   = 'none';
 
-  const name    = form.name.value.trim();
-  const email   = form.email.value.trim();
-  const message = form.message.value.trim();
-  const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const name = document.querySelector("#name").value;
+  const email = document.querySelector("#email").value;
+  const message = document.querySelector("#message").value;
 
-  if (!name || !emailOk || !message) {
-    error.style.display = 'block';
-    return;
-  }
-
-  /* Replace this block with EmailJS or your backend endpoint */
-  success.style.display = 'block';
-  form.reset();
+  emailjs.send(
+    "service_evdungs",
+    "template_73rtdad",
+    {
+      name: name,
+      email: email,
+      message: message,
+    }
+  )
+  .then(() => {
+    alert("Message sent successfully!");
+    form.reset();
+  })
+  .catch((error) => {
+    alert("Failed to send message.");
+    console.log(error);
+  });
 });
 
 /* ── Active nav link on scroll ── */
