@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Girijarani Molleti — Full Stack Developer & CSE Undergraduate at Gandhi Institute of Technology and Management. Building modern web applications with React, Node.js & MongoDB." />
+  <meta name="keywords" content="Girijarani Molleti, Full Stack Developer, React, Node.js, MongoDB, GITAM, Portfolio, Web Developer India" />
+  <meta name="author" content="Girijarani Molleti" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Girijarani Molleti | Full Stack Developer" />
+  <meta property="og:description" content="Full Stack Developer & CSE Undergraduate building modern web apps." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://molletigirijarani-bit.github.io" />
+
+  <title>Girijarani Molleti | Full Stack Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon (emoji fallback) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+</head>
+<body>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">&lt;Girijarani /&gt;</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">about</a></li>
+        <li><a href="#skills" class="nav-link">skills</a></li>
+        <li><a href="#projects" class="nav-link">projects</a></li>
+        <li><a href="#experience" class="nav-link">experience</a></li>
+        <li><a href="#contact" class="nav-link">contact</a></li>
+        <li>
+          <a href="https://drive.google.com/file/d/1xkUnBi2VT89ab0uvQ6CgzoEgfUfltC-T/view?usp=sharing"
+             target="_blank" class="nav-resume">Resume ↓</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section id="hero">
+    <div class="hero-content">
+      <img src="assets/img/profile.jpeg" alt="Girijarani Molleti" class="hero-photo" />
+      <span class="hero-tag">👋 Welcome to my portfolio</span>
+      <h1 class="hero-name">Hi, I'm <span class="gradient-text">Girijarani Molleti</span></h1>
+      <p class="hero-role"><span id="typing-text"></span><span class="cursor-blink">|</span></p>
+      <p class="hero-desc">
+        A Full Stack Web Developer passionate about building modern web applications
+        and solving real-world problems. CSE undergraduate at Gandhi Institute of
+        Technology and Management.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Get In Touch</a>
+        <a href="https://drive.google.com/file/d/1xkUnBi2VT89ab0uvQ6CgzoEgfUfltC-T/view?usp=sharing"
+           target="_blank" class="btn-outline">Download Resume ↓</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/molletigirijarani-bit" target="_blank" class="social-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <span class="social-sep">|</span>
+        <a href="https://www.linkedin.com/in/girija-rani-molleti" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <span class="social-sep">|</span>
+        <a href="mailto:molletigirijarani@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot-wrap"><div class="scroll-ball"></div></div>
+      <span>scroll down</span>
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section id="about" class="section">
+    <div class="container reveal">
+      <p class="sec-label">01 — about me</p>
+      <h2 class="sec-title">Who I <span class="gradient-text">Am</span></h2>
+      <div class="sec-line"></div>
+
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="card">
+            <h3 class="card-heading">My Story</h3>
+            <p>
+              I'm a 3rd year Computer Science Engineering undergraduate at
+              <strong>Gandhi Institute of Technology and Management</strong>,
+              maintaining a stellar CGPA of <strong class="highlight">9.5 / 10</strong>.
+            </p>
+            <p style="margin-top:1rem">
+              I love turning ideas into real, deployed web applications — from
+              designing clean UIs to engineering robust backends. Currently
+              deepening my expertise in advanced full stack development while
+              actively building projects that solve real problems.
+            </p>
+          </div>
+          <div class="fact-grid">
+            <div class="fact-card">
+              <div class="fact-label">CGPA</div>
+              <div class="fact-val highlight">9.5 / 10 🏆</div>
+            </div>
+            <div class="fact-card">
+              <div class="fact-label">Year</div>
+              <div class="fact-val">3rd Year CSE 🎓</div>
+            </div>
+            <div class="fact-card">
+              <div class="fact-label">Open To</div>
+              <div class="fact-val">Internships ✅</div>
+            </div>
+            <div class="fact-card">
+              <div class="fact-label">Location</div>
+              <div class="fact-val">India 🇮🇳</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="card">
+            <h3 class="card-heading">Tech Stack</h3>
+            <div class="tag-wrap">
+              <span class="tag">HTML5</span><span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span><span class="tag">React</span>
+              <span class="tag">Node.js</span><span class="tag">Express</span>
+              <span class="tag">MongoDB</span><span class="tag">Git</span>
+              <span class="tag">GitHub</span><span class="tag">Tailwind CSS</span>
+              <span class="tag">REST APIs</span><span class="tag">Vercel</span>
+            </div>
+          </div>
+          <div class="card" style="margin-top:1.25rem">
+            <h3 class="card-heading">Interests</h3>
+            <p>Web development, open source contribution, hackathons, UI/UX design,
+               and building tools that make everyday tasks simpler.</p>
+          </div>
+          <div class="card" style="margin-top:1.25rem">
+            <h3 class="card-heading">Career Goals</h3>
+            <p>To build impactful, user-centric products, contribute to open source,
+               and grow into a software engineer who creates meaningful digital experiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SKILLS ░░ -->
+  <section id="skills" class="section section-alt">
+    <div class="container reveal">
+      <p class="sec-label">02 — expertise</p>
+      <h2 class="sec-title">My <span class="gradient-text">Skills</span></h2>
+      <div class="sec-line"></div>
+      <div class="skills-grid" id="skills-grid">
+        <!-- Injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PROJECTS ░░ -->
+  <section id="projects" class="section">
+    <div class="container reveal">
+      <p class="sec-label">03 — portfolio</p>
+      <h2 class="sec-title">My <span class="gradient-text">Projects</span></h2>
+      <div class="sec-line"></div>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Injected by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ EXPERIENCE ░░ -->
+  <section id="experience" class="section section-alt">
+    <div class="container reveal">
+      <p class="sec-label">04 — journey</p>
+      <h2 class="sec-title">Experience & <span class="gradient-text">Education</span></h2>
+      <div class="sec-line"></div>
+
+      <div class="exp-grid">
+        <!-- Education -->
+        <div>
+          <h3 class="timeline-head">EDUCATION</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2025 – Present</div>
+              <div class="tl-title">B.Tech Computer Science & Engineering</div>
+              <div class="tl-sub">Gandhi Institute of Technology and Management</div>
+              <div class="tl-badge">CGPA: 9.5 / 10</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2022 – 2025</div>
+              <div class="tl-title">Diploma (CSE) </div>
+              <div class="tl-sub">State Board of Technical Education and Training, AP</div>
+              <div class="tl-badge">97.8%</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2022</div>
+              <div class="tl-title">SSC — 10th Grade</div>
+              <div class="tl-sub">Board of Secondary Education, Andhra Pradesh</div>
+              <div class="tl-badge">89.6%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div>
+          <h3 class="timeline-head">EXPERIENCE & CERTIFICATIONS</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2024</div>
+              <div class="tl-title">Web Development Intern</div>
+              <div class="tl-sub">Technical hub</div>
+              <div class="tl-desc">Built and deployed full stack web applications,
+                worked on React frontends and Node.js/Express backends,
+                collaborated in an Agile team environment.</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2025</div>
+              <div class="tl-title">Full Stack Web Development</div>
+              <div class="tl-sub">Certification — React, Node.js, MongoDB</div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-date">2026</div>
+              <div class="tl-title">Hackathon Participant</div>
+              <div class="tl-sub">Built a real-time location tracker</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section id="contact" class="section">
+    <div class="container reveal">
+      <p class="sec-label">05 — get in touch</p>
+      <h2 class="sec-title">Let's <span class="gradient-text">Connect</span></h2>
+      <div class="sec-line"></div>
+
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <p class="contact-intro">
+            I'm currently open to internships, hackathon collaborations, and
+            freelance projects. Whether you have a question or just want to say
+            hi — my inbox is always open!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:molletigirijarani@gmail.com" class="contact-link">
+              <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+              molletigirijarani@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/girija-rani-molleti" target="_blank" class="contact-link">
+              <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+              linkedin.com/in/girija-rani-molleti
+            </a>
+            <a href="https://github.com/molletigirijarani-bit" target="_blank" class="contact-link">
+              <span class="contact-icon"><i class="fab fa-github"></i></span>
+              github.com/molletigirijarani-bit
+            </a>
+            <a href="https://drive.google.com/file/d/1xkUnBi2VT89ab0uvQ6CgzoEgfUfltC-T/view?usp=sharing"
+               target="_blank" class="contact-link">
+              <span class="contact-icon"><i class="fas fa-file-alt"></i></span>
+              Download My Resume
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5"
+                placeholder="Hello Girijarani, I'd like to..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="form-success" id="form-success">
+              ✅ Message sent! I'll get back to you soon.
+            </p>
+            <p class="form-error" id="form-error">
+              ⚠️ Please fill in all fields correctly.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-name">Designed & Built by <span class="gradient-text">Girijarani Molleti</span></p>
+      <div class="footer-links">
+        <a href="https://github.com/molletigirijarani-bit" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/girija-rani-molleti" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:molletigirijarani@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer-copy">© 2026 · Made with ❤️ and lots of ☕</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
