@@ -45,10 +45,10 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 /* ── Skills data & render ── */
 const skills = [
-  { cat: 'Frontend',      items: [['React', 85], ['JavaScript', 88], ['HTML & CSS', 95], ['Tailwind CSS', 80]] },
-  { cat: 'Backend',       items: [['Node.js', 76], ['Express.js', 74], ['REST APIs', 80], ['JWT Auth', 68]] },
-  { cat: 'Database',      items: [['MongoDB', 72], ['Mongoose', 70], ['MongoDB Atlas', 68]] },
-  { cat: 'Tools & DevOps',items: [['Git & GitHub', 90], ['Vercel', 78], ['Render', 72], ['VS Code', 95]] },
+  { cat: 'Frontend',      items: [['React', 50], ['JavaScript', 80], ['HTML & CSS', 95]] },
+  { cat: 'Backend',       items: [['Node.js', 56], ['Express.js',45]] },
+  { cat: 'Database',      items: [['MongoDB', 72], ['MongoDB Atlas', 68]] },
+  { cat: 'Tools & DevOps',items: [['Git & GitHub', 80],['VS Code', 95]] },
 ];
 
 const skillsGrid = document.getElementById('skills-grid');
@@ -79,60 +79,57 @@ document.querySelectorAll('.skill-cat').forEach(el => barObserver.observe(el));
 /* ── Projects data & render ── */
 const GH = 'https://github.com/molletigirijarani-bit';
 const projects = [
-  {
-    emoji: '🌤️',
-    bg: 'linear-gradient(135deg,#0f2744,#185fa5)',
-    title: 'Weather App',
-    desc: 'Real-time weather using OpenWeatherMap API with city search, temperature unit toggle, and a 5-day forecast display.',
-    tags: ['React', 'API', 'CSS3'],
-    github: GH + '/weather-app',
-    live: '#'
-  },
+
   {
     emoji: '✅',
+
     bg: 'linear-gradient(135deg,#0e2a1e,#1d9e75)',
-    title: 'Full Stack To-Do App',
-    desc: 'Task manager with user authentication, full CRUD operations, and persistent MongoDB storage via Express REST API.',
-    tags: ['React', 'Node.js', 'MongoDB'],
-    github: GH + '/todo-app',
-    live: '#'
+
+    title: 'To-Do List App',
+
+    desc:
+    'Modern animated task manager with colorful task cards, smooth animations, responsive design, and dynamic task handling.',
+
+    tags: ['HTML', 'CSS', 'JavaScript'],
+
+    live:
+    'https://molletigirijarani-bit.github.io/to-do-list/',
+
   },
+
   {
     emoji: '📝',
+
     bg: 'linear-gradient(135deg,#1e0e2a,#8b5cf6)',
+
     title: 'Notes App',
-    desc: 'Clean note-taking app with markdown support, category filtering, live search, and local persistence.',
-    tags: ['React', 'Express', 'MongoDB'],
-    github: GH + '/notes-app',
-    live: '#'
-  },
-  {
-    emoji: '🌐',
-    bg: 'linear-gradient(135deg,#1e1a0a,#ba7517)',
-    title: 'Portfolio Website',
-    desc: 'This portfolio — built from scratch with smooth animations, dark theme, typing effect, and full responsiveness.',
+
+    desc:
+    'Stylish notes mini app with glassmorphism UI, colorful note cards, animations, and responsive design.',
+
     tags: ['HTML', 'CSS', 'JavaScript'],
-    github: GH + '/portfolio',
-    live: 'https://molletigirijarani-bit.github.io'
+
+    live:
+    'https://molletigirijarani-bit.github.io/Notes-App/',
+
   },
+
   {
-    emoji: '💬',
-    bg: 'linear-gradient(135deg,#1e0a0a,#d85a30)',
-    title: 'Real-time Chat App',
-    desc: 'Live chat with Socket.io, room support, typing indicators, and persistent message history via MongoDB.',
-    tags: ['React', 'Socket.io', 'Node.js'],
-    github: GH + '/chat-app',
-    live: '#'
-  },
-  {
-    emoji: '🔐',
-    bg: 'linear-gradient(135deg,#0a1a1e,#38bdf8)',
-    title: 'Auth System',
-    desc: 'Complete JWT-based authentication with refresh tokens, protected routes, and role-based access control.',
-    tags: ['Node.js', 'JWT', 'MongoDB'],
-    github: GH + '/auth-system',
-    live: '#'
-  },
+    emoji: '🎯',
+
+    bg: 'linear-gradient(135deg,#0f2744,#185fa5)',
+
+    title: 'Number Guessing Game',
+
+    desc:
+    'Interactive guessing game with modern UI, smooth animations, responsive design, and score tracking.',
+
+    tags: ['HTML', 'CSS', 'JavaScript'],
+
+    live:
+    'https://molletigirijarani-bit.github.io/guessing-Number/',
+
+  }
 ];
 
 const projectsGrid = document.getElementById('projects-grid');
@@ -146,7 +143,6 @@ projects.forEach(p => {
       <div class="proj-title">${p.title}</div>
       <div class="proj-desc">${p.desc}</div>
       <div class="proj-links">
-        <a href="${p.github}" target="_blank" class="proj-link"><i class="fab fa-github"></i> GitHub</a>
         <a href="${p.live}" target="_blank" class="proj-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
       </div>
     </div>`;
